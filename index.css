@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: #eff4fd;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+    border: 2px solid blue;
+    border-right: transparent;
+    padding-left: 5px;
+    color: #fd4766;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.nav ul li a:hover{
+    color:#fd4766;
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    color: #ffF;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fd4766;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    border: 2px solid #fd4766
+}
+.btn:hover{
+    background: transparent;
+    color: #fd4766;
+}
+
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+#modalbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 450px;
+    text-align: center;
+    padding: 80px 60px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #441d6c;
+    border-radius: 8px;
+    display: none;
+
+}
+#modalbox button{
+    background: #ff5945;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.close_icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor:pointer;
+
+}
+.detail h1{
+    color: #1d1d25;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.detail h1 span{
+    color: #fd4766;
+}
+
+.detail p{
+    color: #1d1d25;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

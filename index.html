@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body onload="showmodal()">
+    <div class="hero">
+        <div id="modalbox">
+            <p>we use cookies to optimize user experience and content</p>
+            <button type="button" onclick="closemodal()">Accept</button>
+            <img src="icons8-close-50.png" class="close_icon" onclick="closemodal()">
+        </div>
+        <nav>
+<p class="logo" > mophs</p>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="#">portfolio</a></li>
+    <li><a href="#">contact</a></li>
+</ul>
+<a href="#" class="btn">Hire me</a>
+        </nav>
+    </div>
+    <div class="detail">
+        <h1>Hey, I'm <span>mophs</span></h1>
+        <p>This is my offficial website to show all details and work <br> experience of web development</p>
+        <a href="#" class="btn">Download CV</a>
+
+    </div>
+    <div class="image">
+        <img src="mophs3.png" alt="mophs image">
+    </div>
+    <script>
+        let modalBox = document.getElementById("modalbox");
+
+        function showmodal(){
+            setTimeout(() => {
+                modalBox.style.display = "block";
+            }, 3000);
+        }
+        function closemodal(){
+            modalBox.style.display = "none";    
+        }
+    </script> 
+</body>
+</html>
